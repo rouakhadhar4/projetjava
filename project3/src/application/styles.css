@@ -1,0 +1,41 @@
+/* styles.css */
+
+/* Styles pour le conteneur BorderPane */
+#mainPane {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+}
+
+/* Styles pour le conteneur VBox */
+VBox {
+    -fx-alignment: CENTER; /* Alignement du contenu au centre */
+    -fx-spacing: 20; /* Espacement entre les éléments enfants */
+}
+
+/* Styles pour les labels */
+#dashboardLabel {
+    -fx-font-size: 24pt; /* Taille de police */
+    -fx-font-weight: bold; /* Police en gras */
+    -fx-text-fill: #333333; /* Couleur du texte */
+}
+
+/* Styles pour les boutons */
+Button {
+    -fx-font-size: 14pt; /* Taille de police */
+    -fx-padding: 10 20; /* Rembourrage */
+    -fx-background-color: #007bff; /* Couleur de fond */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-background-radius: 5; /* Rayon des coins */
+    -fx-border-radius: 5; /* Rayon des coins du bord */
+}
+
+/* Styles pour les boutons au survol */
+Button:hover {
+    -fx-background-color: #0056b3; /* Couleur de fond au survol */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 0); /* Ombre portée au survol */
+}
+
+/* Styles pour les boutons au clic */
+Button:pressed {
+    -fx-background-color: #004080; /* Couleur de fond au clic */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 10, 0, 0, 0); /* Ombre portée au clic */
+}

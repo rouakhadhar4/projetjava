@@ -1,0 +1,35 @@
+/* Appliquer un style au BorderPane principal */
+#mainPane {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+}
+
+/* Appliquer un style au VBox central */
+VBox {
+    -fx-alignment: center; /* Centrer le contenu verticalement */
+    -fx-spacing: 20px; /* Espacement entre les éléments enfants */
+}
+
+/* Appliquer un style aux étiquettes */
+Label {
+    -fx-font-size: 24pt; /* Taille de police */
+    -fx-font-weight: bold; /* Gras */
+}
+
+/* Appliquer un style aux boutons */
+Button {
+    -fx-background-color: #007BFF; /* Couleur de fond */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-font-size: 14pt; /* Taille de police */
+    -fx-padding: 10px 20px; /* Espacement intérieur */
+    -fx-border-radius: 5px; /* Rayon des coins arrondis */
+}
+
+/* Style lorsque le bouton est survolé */
+Button:hover {
+    -fx-background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Style lorsque le bouton est pressé */
+Button:pressed {
+    -fx-background-color: #003d80; /* Couleur de fond lorsque pressé */
+}

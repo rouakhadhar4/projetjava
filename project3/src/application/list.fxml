@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.List">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="680.0">
+            <children>
+                <VBox layoutX="26.0" layoutY="84.0" prefHeight="163.0" prefWidth="60.0" spacing="15.0">
+                    <children>
+                        <Label prefHeight="26.0" prefWidth="43.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="26.0" prefWidth="25.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+              
+   <TableView fx:id="TableView" layoutX="16.0" layoutY="56.0" prefHeight="242.0" prefWidth="663.0">
+    <columns>
+        <TableColumn fx:id="id_hotel" prefWidth="68.0" style="-fx-background-color: #;" text="ID" />
+        <TableColumn fx:id="nom" prefWidth="63.20001220703125" style="-fx-background-color: #;" text="Nom" />
+        <TableColumn fx:id="adresse" prefWidth="75.20001220703125" style="-fx-background-color: #;" text="Adresse" />
+        <TableColumn fx:id="ville" prefWidth="85.59996032714844" style="-fx-background-color: #;" text="Ville" />
+        <TableColumn fx:id="pays" prefWidth="69.60003662109375" style="-fx-background-color: #;" text="Pays" />
+        <TableColumn fx:id="etoiles" prefWidth="68.00006103515625" style="-fx-background-color: #;" text="Étoiles" />
+        <TableColumn fx:id="description" prefWidth="89.5999755859375" style="-fx-background-color: #;" text="Description" />
+        <TableColumn fx:id="image_Url" prefWidth="136.0" style="-fx-background-color: #;" text="URL de l'image" />
+    </columns>
+</TableView>
+   
+
+              
+                <Label fx:id="Labelinfos" layoutX="90.0" layoutY="252.0" prefHeight="30.0" prefWidth="160.0" textFill="#176f1d" />
+                <Label layoutX="177.0" prefHeight="54.0" prefWidth="357.0" text="Hotel Management" textFill="CORNFLOWERBLUE">
+                    <font>
+                        <Font name="System Italic" size="36.0" />
+                    </font>
+                </Label>
+                <Label layoutX="-26.0" layoutY="117.0" />
+                <Button fx:id="insertButton" alignment="BOTTOM_CENTER" layoutX="532.0" layoutY="12.0" mnemonicParsing="false" onAction="#insertButton" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: #FFE4C4;" text="Add new hotel" textFill="#7e4d4d" />
+                <Button fx:id="updateButton" layoutX="198.0" layoutY="310.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: #00BFFF;" text="Edit" textFill="#272827" />
+                <Button fx:id="deleteButton" layoutX="348.0" layoutY="310.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: #48D1CC;" text="Delete" textFill="#282727" />
+                    
+                <ImageView fitHeight="54.0" fitWidth="112.0" layoutX="86.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fitHeight="54.0" fitWidth="102.0" layoutX="86.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" />
+          
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
